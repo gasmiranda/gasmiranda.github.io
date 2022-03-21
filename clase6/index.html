@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <main>
+
+        <section>
+            <h1>Clase 6</h1>
+            <fieldset>
+                <legend>
+                    Alta de Usuario
+                </legend>
+                <form action="AltaUsuario.html" method="POST">
+                    <input type="file" name="dni-frente" required>
+                    <input type="hidden" value="valoroculto" name="ej http://dominio.com.ar">
+                    <input type="text" name="nombre" required placeholder="ingrese algo">
+                    
+                    <input type="text" placeholder="valor entre 0 y 9" required pattern="[0-9]">
+                    <input type="submit" value="Enviar">
+                    <br>
+                    <textarea name="info-extra" cols="40" rows="4"></textarea>
+                    <hr>
+
+                    <select multiple>
+                        <optgroup lebel="Animales">
+                            <option>Leon</option>
+                            <option>Tigre</option>
+                            
+
+                        </optgroup>
+                        <optgroup lebel="colores">
+                            <option>Rojo</option>
+                            <option>Verde</option>
+                            <option>Azul</option>
+
+                        </optgroup>
+                    </select>
+                    <br>
+
+                    <input list="browser">
+                    <datalist id="browser" name="databrowser">
+                        <optio>EDGE</optio>
+                        <option>Chrome</option>
+                        <option>Firefo</option>
+                        <option>Opera</option>
+                    </datalist>
+                    
+                    <br>
+                    <label for="buscar">Tipo search</label>
+                    <input type="search" name="buscar">
+                    <br>
+                    <lebel for="buscartext">Tipo search</lebel>
+                    <input type="text" name="buscartext">
+                    <br>
+                    <input type="submit" value="Enviar">
+                </form>                
+            </fieldset>
+        </section>
+
+    </main>
+</body>
+</html>
