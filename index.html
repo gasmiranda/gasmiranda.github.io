@@ -1,60 +1,96 @@
-<DOCTYPE html>
-
-    <html lang="es"><!-- etiqueta de apertura -->
-        <head>
-            <title>Clase3 - HTML</title>
-            <meta charset="utf-8">
-        </head>
-    
-        <body>
-            <h1>Gastón Miranda</h1>
-            <h2>Mis primeros pasos en html</h2>
-            <!-- hasta h6-->
-    
-            <!--parrafo-->
-            <p>Parrafo</p>
-        
-            <p>Lenguajes</p>
-            <!-- lista sin orden-->
-            <ul>
-                <li>java</li>
-                <li>c#</li>
-                <li>go</li>
-            </ul>
-    
-            <p>Posiciones</p>
-            <!--listas ordenadas-->
-            <ol>
-                <li>primer</li>
-                <li>segundo</li>
-                <li>tercero</li>
-            </ol>
-    
-            <!--imagen relativo-->
-            <img src="simpsons.jpg" alt="Los Simpons" width="160"/>
-    
-            <br/> <!-- etiqueta que genera un salto-->
-    
-            <!-- imagen absoluto-->
-            <img src="https://picsum.photos/200/300"/>
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clase5 - HTML</title>
+</head>
+<body>
+    <h1>CREAR CUENTA</h1>
+    <fieldset>
+        <legend>
+            Informaci&oacute;n Personal
+        </legend>
+        <form>
             <br>
+            <lebel>Nombre *</lebel>
+            <input type="text" name="nombre">
+            <lebel>Apellido *</lebel>
+            <input type="text" name="apellido" placeholder="miranda">
+            <br>
+            <lebel>Dirección de email *</lebel>
+            <input type="email" name="email" placeholder="mail@gmail.com">
+            <br>
+            <lebel>Nro de Doumento *</lebel>
+            <input type="text" nname="apellido" placeholder="********">
+            <br>
+
+            <!--solo numero-->
+            <lebel>Edad</lebel>
+            <input type="number" min="0" max="999">
+            <br>
+            <lebel>Adherirse al boletín de novedades</lebel>
+            <input type="checkbox" name="adh" value="SI" checked>
+            <br>
+
+            <lebel>Casado</lebel>
+            <span>SI</span>
+            <input type="radio" name="casado" value="Si">
+            <span>NO</span>
+            <input type="radio" name="casado" value="NO" checked>
+            <br>
+
+            <level>Tiene hijos</level>
+            <span>SI</span>
+            <input type="radio" name="hijos" value="SI">
+            <span>NO</span>
+            <input type="radio" name="hijos" value="NO" checked>
+            <lebel>Cantidad</lebel>
+            <select>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select><br>
+
+            <input type="submit" value="ENVIAR">
+
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Form con tabla</legend>
+        <formm action="../clase4/index.html" method="POST">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <lebel>Dirección de email *</lebel><br>
+                        <input type="email" name="email" placeholder="mail@gmail.com">
+                    </td>    
+                <tr>
+                    <td>
+                        <lebel>Nombre *</lebel><br>
+                        <input type="text" name="nombre" maxlength="100">
+                    </td>
+                    <td>
+                        <lebel>Apellido *</lebel><br>
+                        <input type="text" name="apellido" placeholder="miranda">
+                    </td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>
+                        <lebel>Número de docuemnto *</lebel><br>
+                        <input type="number" name="DNI" min="0" max="99999999">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Guardar">
+                    </td>
+                </tr>
+            </table>
+        </formm>
+    </fieldset>
     
-            <!-- enlaces-->
-            <a href="https://picsum.photos/200/300" target="_blank"> ver imagen</a>
-    
-            <hr/> <!-- etiqueta que genera un salto y una línea-->
-    
-            <!-- etiquetas bascias-->
-            <b>c#</b>
-            <mark>java</mark>
-            <ins>go</ins>
-            <small>segundo</small>
-            <del>tercero</del>
-            <sup>GASTON</sup>
-            <sub>MIRANDA</sub>
-            <small>DNI</small>
-    
-        </body>    
-    
-    </html><!-- etiqueta de cierre-->
+</body>
+</html>
