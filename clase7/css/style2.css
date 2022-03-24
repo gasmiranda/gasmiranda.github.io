@@ -1,0 +1,23 @@
+/*
+*{
+    background-color: blue;
+}
+*/
+
+/*esto es un comentario de una sola linea, css*/
+/*estoy usado css intermo*/
+body {
+    background-color:aqua;
+}
+
+.container {
+    background-color: rgb(233, 161, 74);
+}
+
+.classsection {
+    background-color: yellow;
+}
+
+.header {
+    background-color: beige;
+}
