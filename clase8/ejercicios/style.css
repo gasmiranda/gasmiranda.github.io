@@ -1,0 +1,81 @@
+/*tercer forma*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+
+h1 {
+    cursor: pointer;
+}
+* {
+    font-family: 'Roboto Slab', serif;
+}
+nav ul {
+    color: rgb(255, 0, 34) ;
+}
+nav ul li {
+    list-style: circle;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    font-style: italic;
+    text-decoration-color: rgb(9, 0, 128);
+}
+
+/*propiedades de texto*/
+.text-right {
+    letter-spacing: 3px;
+    text-align: justify; /*left | right | */
+    word-spacing: 15px;
+    text-transform: capitalize; /*lowercase | uppercase | capitalize*/;
+    text-decoration: underline; /*underline*/
+    text-decoration-color: rgb(113, 43, 226);
+    text-decoration-style: solid /*wavy / double*/;
+
+}
+.text-right span {
+    word-spacing: 2px;
+}
+
+/*texto con sombra*/
+h3 {
+    font-family:'Courier New', Courier, monospace;
+    text-shadow: 1px 1px royalblue /*costado abajo y color*/; 
+    font-weight: 700; 
+1}
+
+/*bordes tabla*/
+section table {
+    border-left: 2px solid black;
+    border-right: 2px solid red;
+    border-top: 2px solid blue;
+    border-bottom: 2px solid green;
+}
+
+section table td /*para a gregar color a las celdas td*/{
+    border-left: 5px solid lightblue;
+    border-right: 5px solid lightblue;
+    border-bottom: 5px solid lightblue;
+    border-top: 5px solid lightblue;
+}
+
+/*agregar estilos para que los th tengan distintos colores de bordes*/
+
+section table th {
+    border-left: 5px solid rgb(235, 10, 197);
+    border-right: 5px solid rgb(12, 185, 243);
+    border-bottom: 5px solid rgb(97, 238, 84);
+    border-top: 5px solid rgb(235, 9, 96);
+
+}
+
+.Col1 {
+    text-transform: uppercase;
+    text-decoration-color: blueviolet;
+    background-color: gold;
+}
+
+.Col2 {
+    text-transform: lowercase;
+    text-decoration-color: blueviolet;
+    background-color: yellowgreen;
+}
+
