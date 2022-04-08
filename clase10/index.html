@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Clase10</title>
     <style>
         /*pseudo clases*/
         /*visited*/
         a:visited {
-            color: aquamarine;
+            color: aqua;
         }
 
         /*pasar el mouse por arriba*/
@@ -30,8 +30,11 @@
             font-size: 2em;
         }
 
-        div p:nth-child(odd) {
+        div p:nth-child(odd) /*elementos pares*/{
             color: chartreuse;
+        }
+        div p:nth-child(even) /*elementos impares*/{
+            color: red;
         }
 
         /*table*/
@@ -40,7 +43,7 @@
         }
 
         /*rodrigo */
-        table tr:nth-child(even) {
+        table tr:nth-child(even) /*elementos impares*/ {
             color:red
         }
         table tr:nth-child(odd) {
@@ -48,22 +51,22 @@
         }
 
         /*
-            especificidad
-            !important
+            especificidad (cuando se aplica varios est a un elemento indica cual esta por encima)
+            !important (atributo que aplica por sobre los demas)
         */
     </style>
 </head>
 <body>
     
     <main>
-        <h1>Titulo de la página</h1>        
+        <h1>T&iacutetulo de la página</h1>        
         <section>
             <p>Texto 1</p>            
             <a href="http://www.google.com.ar">Ir a google</a>
             <a href="http://www.twitter.com">Ir a twitter</a>
             <a href="http://www.facebook.com">Ir a facebook</a>
             <a href="pseudoelementos.html">pseudo elementos</a>
-            <a href="selectorporatr.html">selector atr</a>
+            <a href="selectorporatr.html">selector por atributos</a>
         </section>
 
         <section>
@@ -80,7 +83,7 @@
                     <th>ID</th>
                     <th>NOMBRE</th>
                     <th>PRECIO</th>
-                    <th>Detalle</th>
+                    <th>DETALLE</th>
                 </tr>
                 <tr class="registros">
                     <td>1</td>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase10 Selector por atributo</title>
+    <style>
+        /*selectores por atributo*/
+        [href] {
+            background-color: blueviolet;
+            text-decoration: none;
+        }
+        /*elemento contenido exacto*/
+        [href="nosotros.html"] {
+            background-color: yellow;
+        }
+        /*que comience con i*/
+        [href^="i"] {
+            background-color: aqua;
+        }
+        /*que contenga algo*/
+        [href*="s"] {
+            background-color: violet;
+        }
+        /*que termine con algo*/
+        [href$="o"] {
+            background-color: pink;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        img[alt="s1"] {
+            border: 2px solid red;
+        }
+        img[alt="s2"] {
+            border: 2px solid green;
+        }
+        .imagenes img[alt="s1"] {
+            border: 2px solid orange
+        }
+        .imagenes2 img[alt="s1"] {
+            border: 2px solid black;
+        }
+        .imagenes2 img[alt="s1"]:hover {
+            border-radius: 50%;   
+        }
+        .imagenes2 img[alt="s2"]:hover {
+            border-radius: 50%;
+            border: 5px solid black; 
+        }
+
+    </style>
+</head>
+<body>
+    <headre>
+        <nav>
+            <ul>
+              <li>
+                  <a href="index.html">Home</a>
+              </li>
+              <li>
+                  <a href="nosotros.html">Nosotros</a>
+              </li>
+              <li>
+                  <a href="contacto.html">Contacto</a>
+              </li>
+              <li>
+                  <a href="im&aacutegenes.html">Imágenes</a>
+              </li>
+              <li>
+                  <a href="oso">Oso</a>
+              </li>
+            </ul>
+        </nav>
+    </headre>
+    <section>
+        <div class="imagenes">
+            <img src="../clase9/minion.jpg" alt="s1">
+            <img src="../clase3/simpsons.jpg" alt="s2">
+        </div>
+        <div class="imagenes2">
+            <img src="../clase9/minion.jpg" alt="s1">
+            <img src="../clase3/simpsons.jpg" alt="s2">
+        </div>    
+    </section>
+</body>
+</html>
