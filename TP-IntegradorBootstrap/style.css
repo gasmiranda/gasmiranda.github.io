@@ -1,0 +1,67 @@
+div img {
+    width: 20%;
+    height: 20%;
+
+}
+#ImgPrincipal {
+    filter: brightness(0.6)
+}
+#textoInicio {
+    position: absolute;
+    top:80%;
+    left:50%;
+    color:white;
+    text-align: end;
+    margin-right: 40px;
+    padding:6px;
+    font-size: 1em;
+    text-shadow: 0 0 8px black;
+}
+.conocelos {
+    text-align: center;
+    /*width: 60%;*/
+    margin-bottom: 0%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+}
+.card {
+    width: 100%;
+    margin: 20px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4)
+}
+.card img {
+    width: 100%;
+    height: 210px;
+}
+.card .contenido {
+    padding: 16px;
+    text-align: center;
+}
+#honolulu {
+    width: 100%;
+    height: 100%;
+}
+.orador {
+    text-align: center;
+    /*width: 60%;*/
+    margin-bottom: 0%;
+}
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 3px;
+    background-color: #0a3a58;
+    color: white;
+  }
+
